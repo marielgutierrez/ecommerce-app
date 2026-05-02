@@ -40,19 +40,5 @@
     "precio": 20000,
     "stock": 8,
     "imagen": "/images/products/cd-sabrina-emails.jpg"
-  },
-  {
-    "id": 7,
-    "nombre": "Eternal Sunshine - Cd Ariana Grande",
-    "precio": 35000,
-    "stock": 5,
-    "imagen": "/images/products/cd-ariana-eternal.jpg"
-  },
-  {
-    "id": 8,
-    "nombre": "Positions - Cd Ariana Grande",
-    "precio": 25000,
-    "stock": 12,
-    "imagen": "/images/products/cd-ariana-positions.jpg"
   }
 ]

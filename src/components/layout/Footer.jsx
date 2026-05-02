@@ -1,4 +1,7 @@
 import styles from './Footer.module.css'
+import { FaFacebook, FaInstagram } from 'react-icons/fa'
+import { FaXTwitter } from 'react-icons/fa6'
+
 import ContenedorListaContactos from '../contactos/ContenedorListaContactos';
 
 const Footer = () => {
@@ -15,9 +18,15 @@ const Footer = () => {
                     </div>
                     <p className={styles.tagline}>Tu tienda de música física desde 2005. Calidad y pasión por la música.</p>
                     <div className={styles.socials}>
-                        <a href="#" className={styles.socialBtn} aria-label="Facebook">f</a>
-                        <a href="#" className={styles.socialBtn} aria-label="Instagram">◙</a>
-                        <a href="#" className={styles.socialBtn} aria-label="Twitter">𝕏</a>
+                        <a href="#" className={styles.socialBtn} aria-label="Facebook">
+                            <FaFacebook />
+                        </a>
+                        <a href="#" className={styles.socialBtn} aria-label="Instagram">
+                            <FaInstagram />
+                        </a>
+                        <a href="#" className={styles.socialBtn} aria-label="Twitter">
+                            <FaXTwitter />
+                        </a>
                     </div>
                 </div>
 

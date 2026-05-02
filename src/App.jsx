@@ -2,7 +2,8 @@ import { useState } from 'react'
 import './App.css';
 import ItemListContainer from './components/ItemListContainer';
 import { Layout } from './components/layout/Layout';
-// import { Contador } from './components/EjemploUseEffect';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
 import FormularioContainer from './components/form/FormularioContainer';
 
 import './App.css'
@@ -12,15 +13,27 @@ function App() {
 
   return (
     <>
-      <Layout>
-        <h1>Bienvenidos a mi página</h1>
-        <p>Este es el contenido principal</p>
-        <ItemListContainer Mensaje="Nuestros productos destacados"/>
-        {/* <Contador/> */}
-        {/* <FormularioContainer/> */}
-      </Layout>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+          <Route index element={
+                <>
+                  <Home />
+                  <ItemListContainer Mensaje="Nuestros productos destacados" />
+                </>
+            } />
+            {/* <Route path="productos" element={<ItemListContainer Mensaje="Nuestros productos"/>} /> */}
+            {/* <Route path="producto/:id" element={<ProductoDetalle />} />
+            <Route path="carrito" element={<Carrito />} /> */}
+          </Route>
+        </Routes>
     </>
   );
 }
+
+      // <Layout>
+      //   <ItemListContainer Mensaje="Nuestros productos destacados"/>
+      //   {/* <FormularioContainer/> */}
+      // </Layout>
+
 
 export default App;

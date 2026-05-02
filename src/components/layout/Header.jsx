@@ -15,8 +15,7 @@ const Header = () => {
             <a href="#">Inicio</a>
             <a href="#">Vinilos</a>
             <a href="#">CDs</a>
-            <a href="#">Cassettes</a>
-            <a href="#">Ofertas</a>
+            <a href="#">Contacto</a>
             </nav>
 
             <div className={styles.actions}>
