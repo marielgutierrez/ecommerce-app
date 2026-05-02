@@ -1,10 +1,34 @@
 import styles from './Header.module.css'
+import logo from '/images/logo/logo1.png';
+import { ShoppingCart } from 'lucide-react';
 
 const Header = () => {
     return (
-        <header className={styles.header}>
-            <h1>Bienvenidos a mi App React</h1>
-        </header>
+    <header className={styles.header}>
+        <div className={styles.container}>
+
+            <div className={styles.logo}>
+            <img src={logo} alt="POP" width="180px" height="50px" />
+            </div>
+
+            <nav className={styles.nav}>
+            <a href="#">Inicio</a>
+            <a href="#">Vinilos</a>
+            <a href="#">CDs</a>
+            <a href="#">Cassettes</a>
+            <a href="#">Ofertas</a>
+            </nav>
+
+            <div className={styles.actions}>
+            {/* <button className={styles.searchBtn}> Buscar</button> */}
+            <button className={styles.cartBtn}>
+                <ShoppingCart size={22} />
+                <span className={styles.badge}>3</span>
+            </button>
+            </div>
+
+        </div>
+    </header>
     )
 }
 
