@@ -4,7 +4,6 @@ import ContenedorListaContactos from '../contactos/ContenedorListaContactos';
 const Footer = () => {
     return (
         <footer className={styles.footer}>
-
             <ContenedorListaContactos />
             <br />
             <br />
@@ -14,7 +13,7 @@ const Footer = () => {
                         <span className={styles.logoIcon}>◎</span>
                         <strong>POP</strong>
                     </div>
-                    <p className={styles.tagline}>Tu tienda de música física desde 1995. Calidad y pasión por la música.</p>
+                    <p className={styles.tagline}>Tu tienda de música física desde 2005. Calidad y pasión por la música.</p>
                     <div className={styles.socials}>
                         <a href="#" className={styles.socialBtn} aria-label="Facebook">f</a>
                         <a href="#" className={styles.socialBtn} aria-label="Instagram">◙</a>
@@ -52,7 +51,7 @@ const Footer = () => {
         </div>
         <br />
         <br />
-        <p className={styles.copyright}>&copy; 2026 - Mi Disqueria POP e-commerce</p>
+        <p className={styles.copyright}>&copy; 2026 - Disqueria POP e-commerce</p>
         </footer>
     )
 }

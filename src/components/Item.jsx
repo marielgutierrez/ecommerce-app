@@ -1,7 +1,7 @@
 import styles from './ItemListContainer.module.css'
 import { useState } from 'react';
 
-const Item = ({ nombre, precio, stock }) => {
+const Item = ({ id, nombre, precio, stock, imagen }) => {
 
   const [cantidad, setCantidad] = useState(0);
 
@@ -22,18 +22,20 @@ const Item = ({ nombre, precio, stock }) => {
   }
 
   return (
-    <div className={styles.productos}>
-      <h3>{nombre}</h3>
-      <p>Precio: ${precio}</p>
-      <p>Stock disponible: {stock}</p>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '10px 0' }}>
-        <button onClick={decrementar}>-</button>
-        <p style={{ margin: '0 10px' }}>{cantidad}</p>
-        <button onClick={incrementar}>+</button>
-      </div>
 
-      <button onClick={agregarAlCarrito}>Agregar al Carrito</button>
-    </div>
+        <li key={id} className={styles.item} >
+          <h2>{nombre}</h2>
+          <img src={imagen} alt={nombre} width="150" />
+          <p>Precio: ${precio}</p>
+          <p>Stock disponible: {stock}</p>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '10px 0' }}>
+            <button onClick={decrementar}>-</button>
+            <p style={{ margin: '0 10px' }}>{cantidad}</p>
+            <button onClick={incrementar}>+</button>
+          </div>
+          
+          <button onClick={agregarAlCarrito}>Agregar al Carrito</button>
+        </li>
   )
 }
 

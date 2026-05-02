@@ -20,10 +20,8 @@ const Header = () => {
             </nav>
 
             <div className={styles.actions}>
-            {/* <button className={styles.searchBtn}> Buscar</button> */}
             <button className={styles.cartBtn}>
                 <ShoppingCart size={22} />
-                <span className={styles.badge}>3</span>
             </button>
             </div>
 

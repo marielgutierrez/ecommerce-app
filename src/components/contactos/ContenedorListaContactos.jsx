@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import ListaContactos from './ListaContactos';
+import styles from './ContenedorListaContactos.module.css';
 
 const ContenedorListaContactos = () => {
 
@@ -36,7 +37,7 @@ const ContenedorListaContactos = () => {
   
   return (
     <div>
-      <h2>Lista de Contactos</h2>
+      <h2 className={styles.colTitle}>¿Quiénes somos?</h2>
       <div>
         <ListaContactos contactos={contactos} />
       </div>

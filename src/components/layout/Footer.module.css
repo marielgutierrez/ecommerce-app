@@ -59,38 +59,38 @@
     font-size: 0.85rem;
     text-decoration: none;
     transition: background-color 0.2s ease;
-    }
+}
 
-    .socialBtn:hover {
+.socialBtn:hover {
     background-color: #a82845;
-    }
+}
 
-    .col {
+.col {
     flex: 1 1 140px;
-    }
+}
 
-    .colTitle {
+.colTitle {
     font-size: 1rem;
     font-weight: 600;
     color: #F1C6D0;
     margin-bottom: 16px;
-    }
+}
 
-    .linkList {
+.linkList {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    }
+}
 
-    .linkList a {
+.linkList a {
     font-size: 0.9rem;
     color: #a07080;
     text-decoration: none;
     transition: color 0.2s ease;
-    }
+}
 
 .linkList a:hover {
     color: #F1C6D0;
