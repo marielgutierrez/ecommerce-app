@@ -1,16 +1,42 @@
-# React + Vite
+# 🎵 Disquería POP — eCommerce
+ 
+Primer entrega del proyecto final. Sitio de comercio electrónico de música física (vinilos, CDs, cassettes) desarrollado con React y Vite.
+ 
+---
+ 
+## 🛠️ Tecnologías utilizadas
+ 
+| Tecnología | Versión | Uso |
+|---|---|---|
+| [React](https://react.dev/) | 18+ | Framework principal de UI |
+| [Vite](https://vitejs.dev/) | 5+ | Bundler y entorno de desarrollo |
+| [React Router DOM](https://reactrouter.com/) | 6+ | Sistema de ruteo SPA |
+| JavaScript (ES6+) | — | Lenguaje base |
+| CSS Modules | — | Estilos con scope por componente |
+ 
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✅ Requerimientos cubiertos
+ 
+### Requerimiento #1 — Estructura y Layout
+ 
+- Estructura de carpetas organizada por componente
+- `Layout.jsx` que envuelve todas las páginas con `Header` y `Footer` consistentes
+- `Header.jsx` con navegación usando `<Link>` de React Router
+- `Footer.jsx` con información de la empresa y tarjetas del equipo (mínimo 3 personas)
+### Requerimiento #2 — Catálogo de productos con datos de una API
+ 
+- `ItemListContainer.jsx` carga los productos desde `data/productos.json` usando `useEffect` y `fetch`
+- Cada producto se renderiza con el componente reutilizable `Item.jsx` que recibe sus datos por props
+### Requerimiento #3 — Sistema de ruteo
+ 
+Rutas configuradas con `react-router-dom`:
+ 
+| Ruta | Componente | Descripción |
+|---|---|---|
+| `/` | `Home.jsx` | Vista principal de bienvenida |
+| `/productos` | `Productos.jsx` | Catálogo completo de productos |
+| `/producto/:id` | `ProductoDetalle.jsx` | Detalle de un producto individual |
+| `/carrito` | `Carrito.jsx` | Vista del carrito de compras |
+ 
+La navegación utiliza `<Link>` para evitar recargas de página.
