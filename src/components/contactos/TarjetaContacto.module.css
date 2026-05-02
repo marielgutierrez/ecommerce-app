@@ -1,0 +1,42 @@
+.flexContainer {
+  display: flex;
+  justify-content: center; /* Centra el equipo en la pantalla */
+  gap: 20px;               /* Espacio entre cada tarjeta */
+  flex-wrap: wrap;         /* Si no entran los 4, los manda abajo en celulares */
+  padding: 20px;
+}
+
+.item {
+  background-color: #CC3357; /* Usamos tu color de fondo de index.css */
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  width: 220px; /* Ancho fijo para que todos sean iguales */
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-10px); /* Efecto sutil al pasar el mouse */
+  border-color: var(--accent);
+}
+
+.item h2 {
+  font-size: 1.2rem;
+  color: #F1C6D0;
+  margin-bottom: 10px;
+}
+
+.item p {
+  font-size: 0.9rem;
+  color: #F1C6D0;
+  margin: 5px 0;
+}
+
+.item img {
+  border-radius: 10px;
+  margin-top: 15px;
+  object-fit: cover;
+  border: 2px solid var(--accent-border);
+  width: 100%;
+}

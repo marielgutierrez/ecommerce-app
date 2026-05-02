@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "nombre": "Madonna",
+        "email": "madonna@hotmail.com",
+        "rol": "CEO",
+        "foto": "/images/crew/madonna.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Lady Gaga",
+        "email": "ladygaga@hotmail.com",
+        "rol": "Jefa de Marketing",
+        "foto": "/images/crew/lady-gaga.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Rihanna",
+        "email": "rihanna@hotmail.com",
+        "rol": "Diseñadora",
+        "foto": "/images/crew/rihanna.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Christina Aguilera",
+        "email": "christinaaguilera@hotmail.com",
+        "rol": "Jefa de ventas",
+        "foto": "/images/crew/christina.jpg"
+    }
+]

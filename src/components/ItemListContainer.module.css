@@ -1,0 +1,10 @@
+.productos{
+ flex-direction: column;
+ background-color: bisque;
+ justify-content: center;
+ align-items: center;
+ padding: 15px;
+ border: 1px solid black;
+ border-radius: 8px;
+
+}

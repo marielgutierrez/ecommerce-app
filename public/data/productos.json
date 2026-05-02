@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "nombre": "You seem pretty sad for a girl so in love - Cd Olivia Rodrigo",
+    "precio": 45000,
+    "stock": 22,
+    "imagen": "/images/products/cd-new-olivia.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Guts - Cd Olivia Rodrigo",
+    "precio": 25000,
+    "stock": 2,
+    "imagen": "/images/products/cd-guts.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Sour - Cd Olivia Rodrigo",
+    "precio": 21000,
+    "stock": 2,
+    "imagen": "/images/products/cd-sour.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Short 'n Sweet - Cd Sabrina Carpenter",
+    "precio": 25000,
+    "stock": 10,
+    "imagen": "/images/products/cd-sabrina-short_sw.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Man's best friend - Cd Sabrina Carpenter",
+    "precio": 30000,
+    "stock": 15,
+    "imagen": "/images/products/cd-sabrina-mans-friend.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "emails i can't send - Cd Sabrina Carpenter",
+    "precio": 20000,
+    "stock": 8,
+    "imagen": "/images/products/cd-sabrina-emails.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Eternal Sunshine - Cd Ariana Grande",
+    "precio": 35000,
+    "stock": 5,
+    "imagen": "/images/products/cd-ariana-eternal.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Positions - Cd Ariana Grande",
+    "precio": 25000,
+    "stock": 12,
+    "imagen": "/images/products/cd-ariana-positions.jpg"
+  }
+]
