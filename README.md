@@ -1,4 +1,4 @@
-# E-commerce
+#  Proyecto e-commerce
  
 Primer entrega del proyecto final. Desarrollado con React y Vite.
  
