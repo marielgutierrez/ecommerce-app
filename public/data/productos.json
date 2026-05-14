@@ -1,44 +1,45 @@
 [
   {
     "id": 1,
-    "nombre": "You seem pretty sad for a girl so in love - Cd Olivia Rodrigo",
-    "precio": 45000,
-    "stock": 22,
-    "imagen": "/images/products/cd-new-olivia.jpg"
+    "nombre": "Base Fit Me - Maybelline",
+    "precio": 18000,
+    "stock": 20,
+    "imagen": "/images/products/base-maybelline.jpg"
   },
   {
     "id": 2,
-    "nombre": "Guts - Cd Olivia Rodrigo",
-    "precio": 25000,
-    "stock": 2,
-    "imagen": "/images/products/cd-guts.jpg"
+    "nombre": "Labial Rojo - Revlon",
+    "precio": 12000,
+    "stock": 15,
+    "imagen": "/images/products/labial-revlon.jpg"
   },
   {
     "id": 3,
-    "nombre": "Sour - Cd Olivia Rodrigo",
-    "precio": 21000,
-    "stock": 2,
-    "imagen": "/images/products/cd-sour.jpg"
+    "nombre": "Paleta Naked - Urban Decay",
+    "precio": 45000,
+    "stock": 5,
+    "imagen": "/images/products/paleta-naked.jpg"
   },
+
   {
     "id": 4,
-    "nombre": "Short 'n Sweet - Cd Sabrina Carpenter",
-    "precio": 25000,
-    "stock": 10,
-    "imagen": "/images/products/cd-sabrina-short_sw.jpg"
+    "nombre": "Iluminador - Fenty Beauty",
+    "precio": 42000,
+    "stock": 8,
+    "imagen": "/images/products/iluminador-fenty.jpg"
   },
   {
     "id": 5,
-    "nombre": "Man's best friend - Cd Sabrina Carpenter",
-    "precio": 30000,
-    "stock": 15,
-    "imagen": "/images/products/cd-sabrina-mans-friend.jpg"
+    "nombre": "Labial Mate - Kova",
+    "precio": 7500,
+    "stock": 18,
+    "imagen": "/images/products/labial-kova.jpg"
   },
   {
     "id": 6,
-    "nombre": "emails i can't send - Cd Sabrina Carpenter",
-    "precio": 20000,
-    "stock": 8,
-    "imagen": "/images/products/cd-sabrina-emails.jpg"
+    "nombre": "Rubor Soft - Dapop",
+    "precio": 8500,
+    "stock": 20,
+    "imagen": "/images/products/rubor-dapop.jpg"
   }
 ]

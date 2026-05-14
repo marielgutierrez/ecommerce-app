@@ -1,6 +1,6 @@
-# 🎵 Disquería POP — eCommerce
+# E-commerce
  
-Primer entrega del proyecto final. Sitio de comercio electrónico de música física (vinilos, CDs, cassettes) desarrollado con React y Vite.
+Primer entrega del proyecto final. Desarrollado con React y Vite.
  
 ---
  

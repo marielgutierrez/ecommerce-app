@@ -1,0 +1,81 @@
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  height: 60px;
+  background-color: #ffffff;
+  gap: 40px;
+}
+
+.navList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navLink {
+  color: #a07080;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #CC3357;
+  transition: width 0.2s ease;
+}
+
+.navLink:hover {
+  color: #F1C6D0;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.actions {
+  margin-left: auto;
+}
+
+.cartBtn {
+  background-color: #CC3357;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.cartBtn:hover {
+  background-color: #a82845;
+}
+
+/* Media Query para Escritorio (md: en Tailwind suele ser 768px) */
+@media (min-width: 768px) {
+  .navList {
+    flex-direction: row;
+    gap: 2.5rem; 
+  }
+
+  .navLink {
+    font-size: 1.125rem; 
+  }
+}
