@@ -1,42 +1,48 @@
-import styles from './ItemListContainer.module.css'
-import { useState } from 'react';
+import { Link } from "react-router-dom";
+import { FiShoppingCart, FiEye } from "react-icons/fi";
+import styles from "./Item.module.css";
+import { useCart } from "../context/CarritoContext";
 
-const Item = ({ id, nombre, precio, stock, imagen }) => {
+const Item = ({ producto }) => {
+  const { id, nombre, precio, stock, imagen, categoria } = producto;
+  const { agregarACarrito } = useCart();
 
-  const [cantidad, setCantidad] = useState(0);
-
-  const incrementar = () => {
-    if (cantidad < stock) {
-      setCantidad(cantidad + 1)
-    }
-  }
-
-  const decrementar = () => {
-    if (cantidad > 0) {
-      setCantidad(cantidad - 1)
-    }
-  }
-
-  const agregarAlCarrito = () => {
-    alert(`¡Agregaste ${cantidad} unidades de ${nombre}  al carrito.`);
-  }
+  const sinStock = Number(stock) <= 0;
 
   return (
+    <article className={`${styles.card} reveal`}>
+      <Link to={`/producto/${id}`} className={styles.imgWrap}>
+        {imagen ? (
+          <img src={imagen} alt={nombre} loading="lazy" />
+        ) : (
+          <div className={styles.noImg}>Sin imagen</div>
+        )}
+        {categoria && <span className={styles.categoria}>{categoria}</span>}
+        <span className={styles.overlay}>
+          <FiEye /> Ver detalle
+        </span>
+      </Link>
 
-        <li key={id} className={styles.item} >
-          <h2>{nombre}</h2>
-          <img src={imagen} alt={nombre} width="150" />
-          <p>Precio: ${precio}</p>
-          <p>Stock disponible: {stock}</p>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '10px 0' }}>
-            <button onClick={decrementar}>-</button>
-            <p style={{ margin: '0 10px' }}>{cantidad}</p>
-            <button onClick={incrementar}>+</button>
-          </div>
-          
-          <button onClick={agregarAlCarrito}>Agregar al Carrito</button>
-        </li>
-  )
-}
+      <div className={styles.body}>
+        <h3 className={styles.nombre}>{nombre}</h3>
+        <p className={styles.stock}>
+          {sinStock ? "Sin stock" : `${stock} en stock`}
+        </p>
 
-export default Item
+        <div className={styles.footer}>
+          <span className={styles.precio}>${Number(precio).toLocaleString("es-AR")}</span>
+          <button
+            className={styles.addBtn}
+            onClick={() => agregarACarrito(producto, 1)}
+            disabled={sinStock}
+            aria-label={`Agregar ${nombre} al carrito`}
+          >
+            <FiShoppingCart />
+          </button>
+        </div>
+      </div>
+    </article>
+  );
+};
+
+export default Item;

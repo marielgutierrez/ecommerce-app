@@ -1,0 +1,34 @@
+rules_version = '2';
+
+// Reglas de seguridad de Firestore para Aura Makeup.
+// Cómo aplicarlas: Consola de Firebase → Firestore Database → pestaña "Reglas"
+// → pegar este contenido → "Publicar".
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Determina si el usuario autenticado es administrador leyendo su rol.
+    function esAdmin() {
+      return request.auth != null &&
+        exists(/databases/$(database)/documents/usuarios/$(request.auth.uid)) &&
+        get(/databases/$(database)/documents/usuarios/$(request.auth.uid)).data.rol == 'admin';
+    }
+
+    // Productos: lectura pública (catálogo); solo el admin puede modificar.
+    match /productos/{id} {
+      allow read: if true;
+      allow create, update, delete: if esAdmin();
+    }
+
+    // Usuarios: cada quien lee y escribe únicamente su propio documento.
+    match /usuarios/{uid} {
+      allow read: if request.auth != null;
+      allow create, update: if request.auth != null && request.auth.uid == uid;
+    }
+
+    // Opiniones: lectura pública; crear solo si el usuario está autenticado.
+    match /opiniones/{id} {
+      allow read: if true;
+      allow create: if request.auth != null;
+    }
+  }
+}
